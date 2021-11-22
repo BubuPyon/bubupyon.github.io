@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.664),rgba(0,0,0,0.664)),url(../img/lisa.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    background: #fff;
+    width: 100%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+}
+.logo{
+    width: 220px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 30px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    text-align: center;
+    color: #000;
+    text-transform: uppercase;
+    padding-right: 9px;
+    padding-top: 10px;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.content h2{
+    font-size: 70px;
+    margin-top: 80px;
+    color: #fff;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    color: #fff;
+}
+.combo-box{
+    align-content: center;
+}
+.category{
+    align-items: center;
+    color: #808080;
+    text-indent: 0.1;
+    appearance: none;
+    background: #fff url(../img/arrow.png) right 1px no-repeat;
+    padding-left: 10px;
+    width: 20%;
+    height: 50px;
+    border: 1px solid #c4c4c4;
+    border-radius: 0;
+}
+.keyword{
+    appearance: none;
+    background: #fff;
+    padding-left: 10px;
+    width: 20%;
+    height: 50px;
+    border: 1px solid #c4c4c4;
+    border-radius: 0;
+}
+.wh-button{
+    color: #fff;
+    font: 15px Arial;
+    background: #2abfd2;
+    padding: 12px 25px;
+}
+
+
+
+
+.checked {
+    color: orange;
+}
+
+.tec-section{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    /* padding-top: 50px; */
+    /* padding-bottom: 50px; */
+    /* background-color: ; */
+    background: url('http://skilled.aislinthemes.com/app/uploads/2015/11/bg-contact.png?id=11307');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.col1{
+    text-align: right;
+    background-image: url('../img/topfooter-s.png');
+    background-repeat: no-repeat;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.col2{
+    text-align: right;
+    background-image: url('../img/rightfooter-s.png');
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.bg-contact{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: rgb(202, 202, 202);
+    text-align: center;
+}
